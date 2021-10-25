@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--bill item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".BillItemCard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bill_sandwich_name"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="itemname"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+        <!--    <TextView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="45dp"-->
+        <!--        android:text="Rs."-->
+        <!--        android:layout_weight="1"-->
+        <!--        android:gravity="center"-->
+        <!--        android:textSize="15dp" />-->
+        <TextView
+            android:id="@+id/bill_sandwich_price"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Price"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/bill_sandwich_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="quantity"
+            android:gravity="center"
+            android:textSize="15dp" />
+        <!--    <TextView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="45dp"-->
+        <!--        android:text="Rs."-->
+        <!--        android:layout_weight="1"-->
+        <!--        android:gravity="center"-->
+        <!--        android:textSize="15dp" />-->
+        <TextView
+            android:id="@+id/bill_sandwich_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Amount"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <ru.embersoft.expandabletextview.ExpandableTextView
+        android:id="@+id/bill_sandwich_details"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="30dp"
+        app:etv_animationTime="20"
+        app:etv_expandLines="0"
+        app:etv_showLine="false"
+        app:etv_textContentColor="#8A000000"
+        app:etv_textContentSize="14sp"
+        app:etv_textExpand="Show more"
+        app:etv_textShrink="Show less"
+        app:etv_textStateColor="#8A000000"
+        app:layout_constraintEnd_toStartOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+
+
+</LinearLayout>

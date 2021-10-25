@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--yo2-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CartItem"
+    android:textAlignment="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/sandwich_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SandwichName" />
+
+    <ListView
+        android:id="@+id/sandwich_item_preview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sandwich_price"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/sandwich_add"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="+"
+            app:backgroundTint="#7EC52D" />
+
+        <TextView
+            android:id="@+id/sandwich_quantity"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:text="0"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sandwich_remove"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="-"
+
+            app:backgroundTint="#A11E1E" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/delete_sandwich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Delete Sandwich" />
+
+        <TextView
+            android:id="@+id/sandwich_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:text="0"
+            />
+
+        <Button
+
+            android:id="@+id/change_sandwich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:text="Edit Sandwich" />
+    </LinearLayout>
+</LinearLayout>
